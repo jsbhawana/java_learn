@@ -3,24 +3,24 @@ class Number{
     public void setNumber(int num){
         this.num = num;
     }
-    public int getEvenDigitCount(){
-        int count=0;
+    public int sumofOddDigit(){
+        int sum=0;
         while(num!=0)
         {
             int digit = num%10;
-            if(digit%2==0)
+            if(digit%2==1)
             {
-                count++;
+                sum=sum+digit;
             }   
             num=num/10;
         }
-        return count;
+        return sum;
     }
 }
-public class Demo6 {
+public class Demo7 {
     public static void main(String[] args) {
         Number n = new Number();
         n.setNumber(1234567890);
-        System.out.println("Even digit count: " + n.getEvenDigitCount());
+        System.out.println("Sum of Odd digit: " + n.sumofOddDigit());
     }
 }
