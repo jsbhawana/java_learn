@@ -1,3 +1,4 @@
+//sum of odd digit in a number
 class Number{
     private int num;
     public void setNumber(int num){
